@@ -1,6 +1,6 @@
 # login_ui
 
-A new Flutter project.
+Job app UI
 
 ## Getting Started
 
