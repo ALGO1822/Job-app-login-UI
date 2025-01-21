@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_ui/login.dart';
+import 'social_media_button.dart';
 
 class SignupPage extends StatelessWidget {
   const SignupPage({super.key});
@@ -241,64 +242,12 @@ class SignupPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 5,
-                    ),
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 219, 217, 217),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.g_mobiledata,
-                        color: Colors.black,
-                        size: 30,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 5,
-                    ),
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 219, 217, 217),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.facebook,
-                        color: Colors.black,
-                        size: 30,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 5,
-                    ),
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 219, 217, 217),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.apple,
-                        color: Colors.black,
-                        size: 30,
-                      ),
-                    ),
-                  ),
-                ],
+                  SocialMediaButton(iconData: Icons.g_mobiledata, onpressed: () {},),
+                  const SizedBox(width: 10,),
+                  SocialMediaButton(iconData: Icons.facebook, onpressed: () {},),
+                  const SizedBox(width: 10,),
+                  SocialMediaButton(iconData: Icons.apple, onpressed: () {},)
+                ],               
               ),
             ],
           ),
